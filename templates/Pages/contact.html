@@ -1,0 +1,203 @@
+{% extends 'base.html' %} 
+{% block title_block%} 
+Decodes Lab SDN BHD
+{%endblock%} 
+
+{% block body_block%}
+<div class=" ">
+  <div class="d-flex wow animate__zoomIn"
+    style="
+      background-image: url('https://images.unsplash.com/photo-1526948128573-703ee1aeb6fa?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+      height: 400px;
+      width: 100%;
+      background-repeat: no-repeat;
+      background-position: center;
+      /* filter: blur(5px); */
+      /* opacity: 70%;    */
+      /* mask: 5px;  */
+    "
+  >
+       <div class="d-flex justify-content-center align-items-center flex-column mb-3 " style="height: 100%; width: 100%; background-color: rgba(0, 0, 0,0.4);">
+         <div class="" style="height: 100%; width: 100%; background-color: rgba(0, 0, 0,0.4);">
+            <h2 class="text-white mt-5 ms-5 position-absolute top-50 rounded p-3 fs-1 "  ><b>Contact Us</b></h2>
+          </div>
+       </div>
+    
+  </div>
+</div>
+
+
+
+
+
+<div class="container-fluid">
+  <div class=" row">
+    <div class="d-flex ">
+      <div class="col-md-6 ">
+        <!-- part 1 -->
+        <div class="m-5 p-3 border-bottom wow animate__fadeInLeft">
+          <h2>
+            <b>
+              Secure Your Future with
+              <br>
+              Expert IT Consultation
+            </b>
+          </h2>
+          <p>
+            Security, efficiency, and growth – our IT consulting services cover it all. Contact us now to secure your business’s future with expert advice and solutions that propel you towards success.
+          </p>
+          <div class="fs-4">
+            Contact Details
+          </div>
+          <p class="fs-5">
+            +8801795204246
+          </p>
+          <a href="#" class="fs-5" style="text-decoration: none;">
+            info@decodeslab.com
+          </a>
+          
+        </div>
+        
+        <!-- part 2  -->
+        <div class="m-5 p-3 wow animate__fadeInLeft">
+          <p class="fs-3 ">
+            Send Us a Message
+          </p>
+          <p>
+            Elevate your business operations through proactive IT consulting. 
+          </p>
+          <div>
+            <!-- sweet alert CDN-->
+            <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+
+            <!-- sweet alert  -->
+            {% if messages %}
+            <ul class="messages">
+                {% for message in messages %}
+                <!-- <li{% if message.tags %} class="{{ message.tags }}"{% endif %}>{{ message }}</li> -->
+                <script>
+                  Swal.fire("Your Mail Sent Successfully!");
+               </script>
+                {% endfor %}
+            </ul>
+            {% endif %}
+            
+            <!-- end sweet alert  -->
+            
+            
+            <form action="{% url 'contact' %}" method="post">
+              {% csrf_token %}
+              <!-- 2 column grid layout with text inputs for the first and last names -->
+              <div class="row mb-4">
+                <div class="col">
+                  <div data-mdb-input-init class="form-outline">
+                    <label class="form-label" for="form3Example1">First name</label>
+                    <input name="name" type="text" id="form3Example1" class="form-control"  placeholder="First name" required/>
+                    
+                  </div>
+                </div>
+                <div class="col">
+                  <div data-mdb-input-init class="form-outline">
+                    <label class="form-label" for="form3Example2">Last name</label>
+                    <input type="text" id="form3Example2" class="form-control"  placeholder="Last name" required/>
+                    
+                  </div>
+                </div>
+              </div>
+            
+              <!-- Email input -->
+              <div data-mdb-input-init class="form-outline mb-4">
+                <label class="form-label " for="form3Example3">Email address</label>
+                <input name="email" type="email" id="form3Example3" class="form-control" placeholder="Email address" required/>
+                
+              </div>
+            
+              <!-- Password input -->
+              <div data-mdb-input-init class="form-outline mb-4">
+                <label class="form-label" for="form3Example4">Subject</label>
+                <input name="subject" type="text" id="form3Example4" class="form-control" placeholder="Subject" />
+                
+               
+                
+              </div>
+              <div data-mdb-input-init class="form-outline mb-4">
+                
+                
+                <label class="form-label" for="form4Example3">Message</label>
+                <textarea name="message" class="form-control" id="form4Example3" rows="4" placeholder="Message" required></textarea>
+                
+              </div>
+            
+              
+            
+              <!-- Submit button -->
+              <!-- <button data-mdb-ripple-init type="button" class="btn btn-primary btn-lg btn-block mb-4 ">Submit Form</button> -->
+              <div class="d-grid gap-2">
+                <button class="btn btn-primary" type="submit">Submit Form</button>
+
+              </div>
+            
+            </form>
+          </div>
+        </div>
+  
+      </div>
+      <!-- part 3  -->
+      <div class="col-md-6 d-none d-sm-none d-md-block ">
+        <div class="card p-3 m-5 text-center bg-secondary  wow animate__zoomIn">
+          <img src="https://media.istockphoto.com/id/1462971959/photo/panoramic-view-over-the-city-of-kuala-lumpur-malaysia.jpg?s=1024x1024&w=is&k=20&c=7nwklJrFlabb89IEI8rj5pfURh8MP_KyDV0GTxgkIZk=" class="card-img-top thumbnail" alt="...">
+          <div class="card-body">
+            <h2 class="card-title text-start">
+              Headquarters
+            </h2>
+            <p class="card-text text-md  text-start">
+              Bangladeshi <br>
+              69/C, Green Road,  <br>
+              Dhaka-1205 <br>
+              Saturday – Thursday, 9:30 am – 6:30 pm <br>
+  
+              
+            </p>
+            <p class="text-start pt-4">
+              <a href="#" style="text-decoration: none;" class="text-start  text-white pt-4">Get Directions</a>
+            </p>
+            
+          </div>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+</div>
+
+<div class="d-sm-block  d-md-none ">
+  <div>
+    <div>
+      <div class="col-md-6   ">
+        <div class="card p-3 m-5 text-center bg-secondary">
+          <img src="https://media.istockphoto.com/id/1462971959/photo/panoramic-view-over-the-city-of-kuala-lumpur-malaysia.jpg?s=1024x1024&w=is&k=20&c=7nwklJrFlabb89IEI8rj5pfURh8MP_KyDV0GTxgkIZk=" class="card-img-top thumbnail" alt="...">
+          <div class="card-body">
+            <h2 class="card-title text-start">
+              Headquarters
+            </h2>
+            <p class="card-text text-md  text-start">
+              Bangladeshi <br>
+              69/C, Green Road,  <br>
+              Dhaka-1205 <br>
+              Saturday – Thursday, 9:30 am – 6:30 pm <br>
+  
+              
+            </p>
+            <p class="text-start pt-4">
+              <a href="#" style="text-decoration: none;" class="text-start pt-4 text-white">Get Directions</a>
+            </p>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% endblock %}

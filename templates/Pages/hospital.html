@@ -1,0 +1,140 @@
+{% extends 'base.html' %}
+
+{% block title_block%}
+Decodes Lab SDN BHD
+{% endblock%}
+
+{% block body_block%}
+
+<div class=" wow animate__zoomIn">
+   <div class="position-relative "
+     style="
+       background-image: url('https://images.unsplash.com/photo-1498050108023-c5249f4df085?q=80&w=1472&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+       height: 400px;
+       width: 100%;
+       background-repeat: no-repeat;
+       background-position: center;
+       
+       /* filter: blur(5px); */
+       /* opacity: 70%;    */
+       /* mask: 5px;  */
+     "
+   >
+        <div class="" style="height: 100%; width: 100%; background-color: rgba(0, 0, 0,0.7);">
+           <h2 class="text-white mt-5 ms-5 position-absolute top-50 rounded p-3 fs-1 "  >
+            <b> Hospital Management System (HMS) </b>
+           </h2>
+         </div>
+     
+   </div>
+</div>
+
+ <!-- body content  -->
+<div class="container-fluid wow animate__zoomIn">
+    <div class="row">
+        
+        <div class="col-12 " style="background-color: #F1F1F1;">
+            <div class="ms-5 my-5 " >
+                <p class="text-primary fs-5">
+                    - Our HMS Solutions Offerings
+                </p>
+                <h3>
+                    Revolutionize Healthcare with Our Hospital Management System Solutions
+                </h3>
+                <p>
+                    Welcome to our Hospital Management System (HMS) Solutions page, where we offer cutting-edge solutions to transform healthcare administration, streamline processes, and enhance patient care. In the dynamic world of healthcare, our comprehensive suite of HMS solutions is designed to empower hospitals, clinics, and healthcare providers with advanced tools for efficient management and improved patient outcomes.
+              </p>
+            </div>
+        </div>
+
+
+        <div class="col-12 " >
+            <div class="ms-5 my-5 " >
+                
+                <p class="text-primary fs-5">
+                    Patient Information Management
+                </p>
+                <p>
+                    – Centralized and secure storage of patient records for easy access. <br>
+                    – Patient data integration across departments for a comprehensive view.
+                </p>
+                <p class="text-primary fs-5">
+                    Appointment Scheduling and Management
+                </p>
+                <p>
+                    – Online and automated appointment scheduling for patient convenience. <br>
+                    – Streamlined management of appointments, reducing wait times.
+                </p>
+                <p class="text-primary fs-5">
+                    Electronic Health Records (EHR) Integration
+                </p>
+                <p>
+                    – Seamless integration with EHR systems for accurate and up-to-date patient information. <br>
+                    – Real-time access to patient medical history for informed decision-making.
+                </p>
+                <p class="text-primary fs-5">
+                    Billing and Invoicing Systems
+                </p>
+                <p>
+                    – Automated billing processes for efficient and error-free transactions. <br>
+
+                    – Integration with insurance systems for streamlined claims processing.
+                </p>
+                <p class="text-primary fs-5">
+                    Inventory and Pharmacy Management
+                </p>
+                <p>
+                    – Efficient management of hospital inventory and pharmacy stock. <br>
+
+                    – Automated reordering processes to prevent shortages.
+                </p>
+                <p class="text-primary fs-5">
+                    Data Analytics and Reporting
+                </p>
+                <p>
+                    – Utilize data analytics for insights into hospital performance and patient outcomes. <br>
+
+                    – Customizable reports for compliance reporting and strategic planning.
+
+
+                </p>
+               
+            </div>
+        </div>
+    </div>
+
+</div>
+
+
+
+ <!-- end body content  -->
+
+ <!-- before footer  -->
+<div class=" wow animate__zoomIn">
+  <div class="d-flex "
+    style="
+      background-image: url('https://images.unsplash.com/photo-1587560699334-bea93391dcef?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+      height: 400px;
+      width: 100%;
+      background-repeat: no-repeat;
+      background-position: center;
+      /* filter: blur(5px); */
+      /* opacity: 70%;    */
+      /* mask: 5px;  */
+    "
+  >
+       <div class="d-flex justify-content-center align-items-center flex-column mb-3 " style="height: 100%; width: 100%; background-color: rgba(0, 0, 0,0.7);">
+          <div class="  text-white text-center fs-1 ">
+            <b>Ready to Grow Your Business?</b>
+          </div>
+          <div class=" text-white text-center fs-5 ">Explore cutting-edge IT solutions. Start your journey to innovation now!</div>
+          <a class="btn-outline-primary btn mt-2 fs-5 text-white text-decoration-none rounded p-3 text-center" href="{% url 'contact' %}">Connect With US</a>
+       </div>
+    
+  </div>
+</div>
+
+
+
+
+{% endblock %}

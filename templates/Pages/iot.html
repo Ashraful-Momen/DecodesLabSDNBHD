@@ -1,0 +1,101 @@
+{% extends 'base.html' %}
+
+{% block title_block%}
+Decodes Lab SDN BHD
+{% endblock%}
+
+{% block body_block%}
+
+<div class=" wow animate__zoomIn">
+   <div class="position-relative "
+     style="
+       background-image: url('https://images.unsplash.com/photo-1498050108023-c5249f4df085?q=80&w=1472&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+       height: 400px;
+       width: 100%;
+       background-repeat: no-repeat;
+       background-position: center;
+       
+       /* filter: blur(5px); */
+       /* opacity: 70%;    */
+       /* mask: 5px;  */
+     "
+   >
+        <div class="" style="height: 100%; width: 100%; background-color: rgba(0, 0, 0,0.7);">
+           <h2 class="text-white mt-5 ms-5 position-absolute top-50 rounded p-3 fs-1 "  >
+            <b> Internet Of Things </b>
+           </h2>
+         </div>
+     
+   </div>
+</div>
+
+ <!-- body content  -->
+<div class="container-fluid wow animate__zoomIn">
+    <div class="row">
+        
+        <div class="col-12 " style="background-color: #F1F1F1;">
+            <div class="ms-5 my-5 " >
+                <p class="text-primary fs-5">
+                    - Understanding the Internet of Things (IoT)
+                </p>
+                <h3>
+                    The Evolution of Connectivity
+                </h3>
+                <p>
+                    The Internet of Things (IoT) is a swiftly evolving technology reshaping our interactions with the world around us. From smart homes to autonomous vehicles, IoT is revolutionizing both our personal and professional landscapes. This article delves into the fundamental features and advantages of IoT, while also addressing some of the challenges it presents.
+
+                    <br>At its core, IoT comprises a network of physical devices, vehicles, buildings, and objects embedded with sensors, software, and connectivity. These interconnected devices communicate with each other and humans through the internet, facilitating data exchange and process automation.
+                    <br>A notable benefit of IoT lies in the heightened efficiency it brings to businesses and individuals. By monitoring and analyzing data from diverse sources, IoT devices discern patterns, optimize resource utilization, and enhance decision-making processes.
+                </p>
+            </div>
+        </div>
+
+
+        <div class="col-12 " >
+            <div class="ms-5 my-5 " >
+                
+                <p>
+                    IoT also offers enhanced convenience and comfort. In smart homes, for instance, settings like temperature, lighting, and security can adapt to occupants’ preferences and habits. Wearable devices track health and fitness metrics, offering personalized recommendations.
+
+                    <br>However, IoT presents challenges, including security and privacy concerns. With the increasing number of internet-connected devices, the risk of cyberattacks and data breaches rises. Ensuring the security of IoT networks and data is imperative to thwart unauthorized access and safeguard users’ privacy.
+                    <br>Another hurdle is the complexity of integrating diverse devices and systems within IoT ecosystems. As these ecosystems grow more intricate, ensuring compatibility and interoperability across different devices and platforms becomes progressively challenging.
+                </p>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+
+
+ <!-- end body content  -->
+
+ <!-- before footer  -->
+<div class=" wow animate__zoomIn">
+  <div class="d-flex "
+    style="
+      background-image: url('https://images.unsplash.com/photo-1587560699334-bea93391dcef?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+      height: 400px;
+      width: 100%;
+      background-repeat: no-repeat;
+      background-position: center;
+      /* filter: blur(5px); */
+      /* opacity: 70%;    */
+      /* mask: 5px;  */
+    "
+  >
+       <div class="d-flex justify-content-center align-items-center flex-column mb-3 " style="height: 100%; width: 100%; background-color: rgba(0, 0, 0,0.7);">
+          <div class="  text-white text-center fs-1 ">
+            <b>Ready to Grow Your Business?</b>
+          </div>
+          <div class=" text-white text-center fs-5 ">Explore cutting-edge IT solutions. Start your journey to innovation now!</div>
+          <a class="btn-outline-primary btn mt-2 fs-5 text-white text-decoration-none rounded p-3 text-center" href="{% url 'contact' %}">Connect With US</a>
+       </div>
+    
+  </div>
+</div>
+
+
+
+
+{% endblock %}

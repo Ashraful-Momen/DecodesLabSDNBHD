@@ -1,0 +1,69 @@
+  <!-- header  -->
+  <header class="">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light  rounded-bottom p-3 bg-body rounded">
+        <div class="container-fluid ">
+          <a class="navbar-brand ms-5 wow animate__zoomIn" href="{% url 'home' %}"><i class="fas fa-gem "> Decodes Lab SDN BHD</i> </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse me-5" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0 ">
+              <li class="nav-item">
+                <a class="nav-link active wow animate__zoomIn" aria-current="page" href="{% url 'home' %}">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link wow animate__zoomIn" href="{% url 'about' %}">About</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle wow animate__zoomIn" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Service
+                </a>
+                <ul class="dropdown-menu wow animate__zoomIn" aria-labelledby="navbarDropdown ">
+                  <li><a class="dropdown-item" href="{% url 'cloud' %}">Cloud Transformation and Management</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="{% url 'bigData'%}">Big Data</a></li>
+                  <li><hr><a class="dropdown-item" href="{% url 'dataAnalysis'%}">Data Analysis</a></li>
+                  <li><hr><a class="dropdown-item" href="{% url 'devOps'%}">DevOps Services</a></li>
+                  <li><hr><a class="dropdown-item" href="{% url 'iot'%}">Internet Of Things</a></li>
+                  <li><hr><a class="dropdown-item" href="{% url 'ml'%}"> Machine Learning</a></li>
+                  <li><hr><a class="dropdown-item" href="{% url 'ai'%}"> Artificial Intelligence</a></li>
+                  <li><hr><a class="dropdown-item" href="{% url 'dataSecurity'%}"> Data Security Solutions</a></li>
+                  <li><hr><a class="dropdown-item" href="{% url 'cyber'%}">Cyber Security Service</a></li>
+                  <li><hr><a class="dropdown-item" href="{% url 'uiux'%}">UI/UX</a></li>
+                  <li><hr><a class="dropdown-item" href="{% url 'software'%}">Software Development</a></li>
+                  <li><hr><a class="dropdown-item" href="{% url 'application'%}">Application Service</a></li>
+                  
+                  <li><hr class="dropdown-divider"></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle wow animate__zoomIn" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Solution
+                </a>
+                <ul class="dropdown-menu wow animate__zoomIn" aria-labelledby="navbarDropdown">
+                  <li><hr><a class="dropdown-item" href="{% url 'crm'%}">CRM Services</a></li>
+                  <li><hr><a class="dropdown-item" href="{% url 'eLearning'%}">eLearning</a></li>
+                  <li><hr><a class="dropdown-item" href="{% url 'ecommerce'%}">eCommerce</a></li>
+                  <li><hr><a class="dropdown-item" href="{% url 'erp'%}">ERP</a></li>
+                  <li><hr><a class="dropdown-item" href="{% url 'SmartFarming'%}">SmartFarming</a></li>
+                  <li><hr><a class="dropdown-item" href="{% url 'hospital'%}">Hospital Management System (HMS)</a></li>
+                  <li><hr><a class="dropdown-item" href="{% url 'assetManagement'%}">Asset Management</a></li>
+                  <li><hr><a class="dropdown-item" href="{% url 'pos'%}">POS</a></li>
+                  <li><hr><a class="dropdown-item" href="{% url 'chain'%}">Supply Chain Management</a></li>
+                  <li><hr><a class="dropdown-item" href="{% url 'human'%}">  Human Resources</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link wow animate__zoomIn" href="{% url 'technology' %}">Technology</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link bg-primary rounded text-white px-4 wow animate__zoomIn" href="{% url 'contact' %}">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+</header>
+<!-- end header  -->
