@@ -1,9 +1,9 @@
 from pathlib import Path
 # -----------------------------------
-import environ
-# Initialise environment variables
-env = environ.Env()
-environ.Env.read_env()
+# import environ
+# # Initialise environment variables
+# env = environ.Env()
+# environ.Env.read_env()
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -17,8 +17,8 @@ STATIC_DIR = BASE_DIR / 'static'
 # See https://docs.djangoproject.com/en/5.0/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-# SECRET_KEY = 'django-insecure-q+8*vz3-n$)qee$wibe$wzq%u67b!ek)19v41ld=ucdxku!j0w'
-SECRET_KEY = env('SECRET_KEY')
+SECRET_KEY = 'django-insecure-q+8*vz3-n$)qee$wibe$wzq%u67b!ek)19v41ld=ucdxku!j0w'
+# SECRET_KEY = env('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
@@ -73,12 +73,20 @@ WSGI_APPLICATION = 'shartechnology.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/5.0/ref/settings/#databases
 
+
 DATABASES = {
     'default': {
-        'ENGINE': env('ENGINE'),
-        'NAME': env('NAME'),
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': BASE_DIR / 'db.sqlite3',
     }
 }
+
+# DATABASES = {
+#     'default': {
+#         'ENGINE': env('ENGINE'),
+#         'NAME': env('NAME'),
+#     }
+# }
 
 
 # DATABASES = {
